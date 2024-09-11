@@ -7,6 +7,13 @@ st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
 
+if st.checkbox('Show dataframe'):
+    chart_data = pd.DataFrame(
+       np.random.randn(20, 3),
+       columns=['a', 'b', 'c'])
+
+    chart_data
+    
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
   'second column': [10, 20, 30, 40],
