@@ -83,8 +83,8 @@ latest_iteration = st.empty()
 bar = st.progress(0)
 for i in range(0, 10):
   # Update the progress bar with each iteration.
-  latest_iteration.text(f'Iteration {i}')
-  bar.progress(i)
+  latest_iteration.text(f'Iteration {i+1}')
+  bar.progress(10 * i)
   time.sleep(0.1)
 
 if "counter" not in st.session_state:
