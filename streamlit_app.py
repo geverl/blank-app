@@ -36,4 +36,4 @@ map_data = pd.DataFrame(
 st.map(map_data)
 
 st.text_input("Your name", key="name")
-print(st.session_state.name)
+st.session_state.name
