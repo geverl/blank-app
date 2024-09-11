@@ -14,6 +14,13 @@ df = pd.DataFrame({
 })
 
 df
+
+option = st.selectbox(
+    'Which number do you like best?',
+     df['first column'])
+
+'You selected: ', option
+
 x = st.slider('x')  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
 
